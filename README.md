@@ -1,5 +1,5 @@
 # 11401_CS203A
-## 課程資訊 Class Information
+## Class Information
 - **學期：** 11401
 - **課程名稱：**  資料結構 Data Structures
 - **授課教授：** [黃鈺峰 Yu-Feng Huang](mailto:yfhuang@saturn.yzu.edu.tw)
@@ -9,7 +9,7 @@
  Tuesday &emsp;15:10 ~ 16:00 R1102<br>
  &emsp;&emsp;&emsp;&emsp;&emsp;16:10 ~ 17:00 R1102
 
-## 學生個人資訊 Student Information
+## Student Information
 - **名字：** [蘇芃瑄 Peng-Syuan Su](mailto:s1131523@mail.yzu.edu.tw)
 - **學號：** 1131523
 
