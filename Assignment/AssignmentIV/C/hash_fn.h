@@ -1,1 +1,1 @@
-Header file for C hash functions
+// Header file for C hash functions
