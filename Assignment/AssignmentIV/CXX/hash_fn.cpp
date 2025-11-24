@@ -15,12 +15,19 @@
 #include "hash_fn.hpp"
 
 int myHashInt(int key, int m) {
-    // TODO: replace with your own design
+
+    if (m <= 0) return -1;// Simple integer hash (mod table size)
     return key % m;  // basic division method
 }
 
 int myHashString(const std::string& str, int m) {
     unsigned long hash = 0;
-    // TODO: replace with your own design
+    if (m <= 0) return -1; //Return -1 if table size m is invalid (<=0)
+
+    // Simple string hashing: sum the ASCII values of each character
+    for (size_t i = 0; i < str.length(); i++) {
+        hash += static_cast<unsigned long>(str[i]);
+    }
+
     return static_cast<int>(hash % m);  // basic division method
 }

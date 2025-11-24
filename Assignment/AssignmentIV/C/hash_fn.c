@@ -16,12 +16,20 @@
 #include "hash_fn.h"
 
 int myHashInt(int key, int m) {
-    // TODO: replace with your own design
+    if (m <= 0) return -1; // invalid table size
     return key % m;  // division method example
 }
 
 int myHashString(const char* str, int m) {
     unsigned long hash = 0;
-    // TODO: replace with your own design
+    
+    if (m <= 0) return -1; // invalid table size
+    if (str == NULL) return -1; // null pointer check 
+
+    // Simple string hashing: sum ASCII values
+    for (int i = 0; str[i] != '\0'; i++) {
+        hash += (unsigned long)str[i];
+    }
+
     return (int)(hash % m); // basic division method
 }
