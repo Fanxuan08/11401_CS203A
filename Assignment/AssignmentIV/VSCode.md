@@ -14,7 +14,7 @@ Before you begin, ensure you have the following:
     - Search for "GitHub Pull Requests and Issues" and install the extension.
 
 2. **Sign in to GitHub**
-    - Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on macOS).
+    - Open the Command Palette (`Ctrl+Shift+P` on Windows).
     - Type `GitHub: Sign in` and select the option.
     - Follow the prompts to authenticate with your GitHub account.
 
@@ -23,7 +23,9 @@ Before you begin, ensure you have the following:
     - Type `Git: Clone` and select the option.
     - Paste the URL of your GitHub repository when prompted.
     - Choose a local folder where the repository will be cloned.
-
+    - Add the initial files provided by the professor into the repository through File Explorer 
+    - Remove the unnecessary files one by one (README.md, Makefile for MacOS) 
+ 
 4. **Open the Repository**
     - Once the repository is cloned, VSCode will prompt you to open it.
     - Click `Open` to start working on your project.
@@ -40,5 +42,11 @@ Before you begin, ensure you have the following:
 ## Additional Tips
 - Use the built-in terminal in VSCode for advanced Git commands.
 - Enable GitLens extension for enhanced Git insights.
+
+## How to execute my program ? 
+- In the terminal, use `cd` to navigate to the folder where the current code is located.
+- In the terminal, enter `.\Makefile.bat c/cxx` to build the code using the Makefile.bat file.
+- Enter `<C/CXX> \ <exe filename>` to execute the program.
+- The execution result will be displayed in the terminal.
 
 By following these steps, you can easily connect and manage your GitHub repositories using Visual Studio Code.

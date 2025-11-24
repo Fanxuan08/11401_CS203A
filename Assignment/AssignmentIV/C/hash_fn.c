@@ -9,6 +9,7 @@
    Development History:
     - 2025/11/11: Initial implementation
     - 2025/11/17: Refactored to use hash_fn.h
+    - 2025/11/23: Add initial implementation of the program
 
    Developer: Yu-Feng Huang <yfhuang@saturn.yzu.edu.tw>
  */
