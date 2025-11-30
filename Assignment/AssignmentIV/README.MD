@@ -90,13 +90,13 @@ Email: minna1008.su@gmail.com
 - The project uses a comprehensive Makefile that builds both C and C++ versions with proper flags:
   ```bash
   # Build both C and C++ versions
-  make all
+  .\makefile.bat all
   
   # Build only C version
-  make c
+  .\makefile.bat c
   
   # Build only C++ version
-  make cxx
+  .\makefile.bat cxx
   ```
 
 ### Manual Compilation (if needed)
@@ -118,11 +118,11 @@ Email: minna1008.su@gmail.com
 ### Execution
 - Run the compiled binary:
   ```bash
-  ./hash_function
+  C/hash_function.exe
   ```
   or
   ```bash
-  ./hash_function_cpp
+  CXX/hash_function_cpp.exe
   ```
 
 ### Result Snapshot
