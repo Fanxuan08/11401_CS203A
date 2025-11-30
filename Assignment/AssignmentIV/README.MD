@@ -130,46 +130,43 @@ Email: minna1008.su@gmail.com
   
   ![image](https://github.com/Fanxuan08/11401_CS203A/blob/main/Assignment/AssignmentIV/OutputPicture/Output_C%20(1).png)
   ![image](https://github.com/Fanxuan08/11401_CS203A/blob/main/Assignment/AssignmentIV/OutputPicture/Output_C%20(2).png)
+  ![image](https://github.com/Fanxuan08/11401_CS203A/blob/main/Assignment/AssignmentIV/OutputPicture/Output_C%20(3).png)
 
+  ![image](https://github.com/Fanxuan08/11401_CS203A/blob/main/Assignment/AssignmentIV/OutputPicture/Output_cpp%20(1).png)
+  ![image](https://github.com/Fanxuan08/11401_CS203A/blob/main/Assignment/AssignmentIV/OutputPicture/Output_cpp%20(2).png)
+  ![image](https://github.com/Fanxuan08/11401_CS203A/blob/main/Assignment/AssignmentIV/OutputPicture/Output_cpp%20(3).png)
 
 - Example output for strings:
-  ```
-  === String Hash (m = 10) ===
-  Key     Index
-  -----------------
-  cat     0
-  dog     0
-  ...
 
-  === String Hash (m = 11) ===
-  Key     Index
-  -----------------
-  cat     0
-  dog     0
-  ...
+  ![image](https://github.com/Fanxuan08/11401_CS203A/blob/main/Assignment/AssignmentIV/OutputPicture/Output_C%20(4).png)
+  ![image](https://github.com/Fanxuan08/11401_CS203A/blob/main/Assignment/AssignmentIV/OutputPicture/Output_C%20(5).png)
 
-  === String Hash (m = 37) ===
-  Key     Index
-  -----------------
-  cat     0
-  dog     0
-  ...
-  ```
+  ![image](https://github.com/Fanxuan08/11401_CS203A/blob/main/Assignment/AssignmentIV/OutputPicture/Output_cpp%20(4).png)
+  ![image](https://github.com/Fanxuan08/11401_CS203A/blob/main/Assignment/AssignmentIV/OutputPicture/Output_cpp%20(5).png) 
 
-- Observations: Outputs align with the analysis, showing better distribution with prime table sizes.
+- Observations: 
+  1. The outputs confirm that prime table sizes (e.g., 11, 37) provide a more even key distribution and fewer collisions.
+  2. Non-prime sizes like 10 show noticeable clustering, especially with sequential integer inputs.
+  3. String hashing similarly benefits from larger primes, producing a more uniform spread.
+  4. Overall, the C and C++ results match the expected behavior of the hash functions.
+
 - Example output for integers:
   ```
   Hash table (m=10): [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
   Hash table (m=11): [10, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-  Hash table (m=37): [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, ...]
+  Hash table (m=37): [21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 14, 15, 16, 17, 18, 19, 20]
   ```
 - Example output for strings:
   ```
-  Hash table (m=10): ["cat", "dog", "bat", "cow", "ant", ...]
-  Hash table (m=11): ["fox", "cat", "dog", "bat", "cow", ...]
-  Hash table (m=37): ["bee", "hen", "pig", "fox", "cat", ...]
+  Hash table (m=10): [["bee","pig"], "bat", "cat", ["ant","fox"], "dog", "hen", null, null, "owl", "cow"]
+  Hash table (m=11): [null, "pig", null, ["bat","bee","fox"], ["cat","ant"], null, "dog", "hen", "owl", null, "cow"]
+  Hash table (m=37): [ "pig", null, null, ["bee","fox"], "ant", null, null, "hen", "owl", null, null, null, null, null, null, null, "cat", null, null, "dog", null, null, null, null, null, null, null, null, null, null, null, null, null, null, "cow", null, null ]
   ```
-- Observations: Outputs align with the analysis, showing better distribution with prime table sizes.
+- Observations:
+  1. The outputs confirm that prime table sizes (e.g., 11, 37) provide a more even key distribution and fewer collisions.
+  2. Non-prime sizes like 10 show noticeable clustering, especially with sequential integer inputs.
+  3. String hashing similarly benefits from larger primes, producing a more uniform spread.
+  4. Overall, the C and C++ results match the expected behavior of the hash functions.
 
 ## Analysis
 - Prime table sizes generally result in more uniform distribution and fewer collisions.
