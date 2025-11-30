@@ -29,6 +29,11 @@ Before you begin, ensure you have the following:
 4. **Open the Repository**
     - Once the repository is cloned, VSCode will prompt you to open it.
     - Click `Open` to start working on your project.
+    - The `makefile.bat` failed to build during my first attempt.
+    - By checking computer terminal, using `gcc --version`, I discovered that my compiler was an outdated 2016 version.
+    - Downloaded the latest `MinGW` version and removed the old installation.
+    - Updated the system `environment variable PATH` to include the new MinGW directory.
+    - After updating the compiler setup, the `makefile.bat` successfully bulit and executed, and the program compiled correctly.
 
 5. **Make Changes and Commit**
     - Edit files in the repository as needed.

@@ -10,20 +10,63 @@ Email: minna1008.su@gmail.com
 ## My Hash Function
 ### Integer Keys 
 - Formula / pseudocode:
-  ```text
-  [Your implementation here]
-  ```
-- Rationale: [Explain your design choices and how they minimize collisions.]
+  - [My C language coding implementation here]
+    int myHashInt(int key, int m) {
+      if (m <= 0) return -1; // invalid table size
+      return key % m;  // division method example
+    }
+
+  - [My C++ language coding implementation here]
+    int myHashInt(int key, int m) {
+      if (m <= 0) return -1;// Simple integer hash (mod table size)
+      return key % m;  // basic division method
+    }
+
+- Rationale: 
+  - [My Design choice] 
+      I chose the simple division method for hashing integers ( key % m ). Tt is simple and fast, suitable for basic hash tables.
+
+  - [How they minimize collisions]
+      1. Choose a prime number to reduce patterns in key distribution that may lead to clustering. For example, if many keys share common factors with m, using a non-prime table size may cause many keys to collide at the same index.
+      2. The `% m` operation spreads keys across the table. Using a prime number for the table size helps the keys spread more evenly.
+      3. Avoid table sizes m like 16, 32, or 64 because they can cause more collisions for certain patterns of keys.
 
 ### Non-integer Keys
 - Formula / pseudocode:
-  ```text
-  [Your implementation here]
-  ```
-- Rationale: [Explain your approach and its effectiveness for non-integer keys.]
+  - [My C language coding implementation here]
+    int myHashString(const char* str, int m) {
+      unsigned long hash = 0;
+      if (m <= 0) return -1; // invalid table size
+      if (str == NULL) return -1; // null pointer check
+      // Simple string hashing: sum ASCII values
+      for (int i = 0; str[i] != '\0'; i++) {
+          hash += (unsigned long)str[i];
+      }
+      return (int)(hash % m); // basic division method
+    }
+  
+  - [My C++ language coding implementation here]
+    int myHashString(const std::string& str, int m) {
+      unsigned long hash = 0;
+      if (m <= 0) return -1; //Return -1 if table size m is invalid (<=0)
+      // Simple string hashing: sum the ASCII values of each character
+      for (size_t i = 0; i < str.length(); i++) {
+          hash += static_cast<unsigned long>(str[i]);
+      }
+      return static_cast<int>(hash % m);  // basic division method
+    }
+
+- Rationale:
+  - [My Design choice] 
+      I sum the ASCII values of all characters in the string to implement and works for basic hashing.
+
+  - [How they minimize collisions]
+      1. Using `% m` spreads hash values across the table.
+      2. Choosing a prime number for m helps the values spread more evenly.
+      3. For longer strings, more advanced hash methods may reduce collisions further, but this simple method is enough for small tables.
 
 ## Experimental Setup
-- Table sizes tested (m): 10, 11, 37
+
 - Test dataset:
   - Integers: 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60
   - Strings: "cat", "dog", "bat", "cow", "ant", "owl", "bee", "hen", "pig", "fox"
@@ -31,11 +74,11 @@ Email: minna1008.su@gmail.com
 - Standard: C23 and C++23
 
 ## Results
-| Table Size (m) | Index Sequence         | Observation              |
-|----------------|------------------------|--------------------------|
-| 10             | 1, 2, 3, 4, ...        | Pattern repeats every 10 |
-| 11             | 10, 0, 1, 2, ...       | More uniform             |
-| 37             | 20, 21, 22, 23, ...    | Near-uniform             |
+| Table Size (m) | Index Sequence         | Observation                                           |
+|----------------|------------------------|-------------------------------------------------------|
+| 10             | 1, 2, 3, 4, ...        | Pattern repeats every 10; keys wrap around frequently |
+| 11             | 10, 0, 1, 2, ...       | More uniform distribution; fewer collisions observed  |
+| 37             | 20, 21, 22, 23, ...    | Near-uniform; spread evenly across table              |
 
 ## Compilation, Build, Execution, and Output
 
@@ -168,11 +211,15 @@ Email: minna1008.su@gmail.com
 - Observations: Outputs align with the analysis, showing better distribution with prime table sizes.
 
 ## Analysis
-- Prime vs non-prime `m`: Prime table sizes generally result in better distribution and fewer collisions.
-- Patterns or collisions: Non-prime table sizes tend to produce repetitive patterns, leading to more collisions.
-- Improvements: Use a prime table size and a well-designed hash function to enhance distribution.
+- Prime table sizes generally result in more uniform distribution and fewer collisions.
+- Non-prime table sizes may create repeating patterns, leading to more collisions.
+- Well-designed hash functions combined with prime table sizes improve distribution uniformity.
+- Different key types (integers, strings) may affect collision rates.
+- Collision handling methods (chaining, open addressing) impact performance and distribution.
+- Table size selection should consider both prime strategy and load factor.
 
 ## Reflection
-1. Designing hash functions requires balancing simplicity and effectiveness to minimize collisions.
-2. Table size significantly impacts the uniformity of the hash distribution, with prime sizes performing better.
-3. The design using a prime table size and a linear transformation formula produced the most uniform index sequence.
+1. Designing hash functions requires balancing simplicity and minimizing collisions.
+2. Table size significantly affects distribution uniformity, with prime sizes performing better.
+3. Using a prime table size and a linear or simple transformation formula produces the most uniform index sequence.
+4. Observing the effect of load factor on collision rates helps adjust table size or hashing strategy.
