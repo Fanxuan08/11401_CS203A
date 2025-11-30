@@ -127,53 +127,10 @@ Email: minna1008.su@gmail.com
 
 ### Result Snapshot
 - Example output for integers:
-  ```
-  === Hash Function Observation (C Version) ===
+  
+  ![image](https://github.com/Fanxuan08/11401_CS203A/blob/main/Assignment/AssignmentIV/OutputPicture/Output_C%20(1).png)
+  ![image](https://github.com/Fanxuan08/11401_CS203A/blob/main/Assignment/AssignmentIV/OutputPicture/Output_C%20(2).png)
 
-  === Table Size m = 10 ===
-  Key     Index
-  -----------------
-  21      1
-  22      2
-  ...
-
-  === Table Size m = 11 ===
-  Key     Index
-  -----------------
-  21      10
-  22      0
-  ...
-
-  === Table Size m = 37 ===
-  Key     Index
-  -----------------
-  21      21
-  22      22
-  ...
-
-  === Hash Function Observation (C++ Version) ===
-
-  === Table Size m = 10 ===
-  Key     Index
-  -----------------
-  21      1
-  22      2
-  ...
-
-  === Table Size m = 11 ===
-  Key     Index
-  -----------------
-  21      10
-  22      0
-  ...
-
-  === Table Size m = 37 ===
-  Key     Index
-  -----------------
-  21      21
-  22      22
-  ...
-  ```
 
 - Example output for strings:
   ```
