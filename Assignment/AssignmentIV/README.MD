@@ -138,17 +138,17 @@ Email: minna1008.su@gmail.com
 
 - Example output for strings:
 
-=== Hash Function Observation (C version) ===
+  === Hash Function Observation (C version) ===
 
-  ![image](https://github.com/Fanxuan08/11401_CS203A/blob/main/Assignment/AssignmentIV/OutputPicture/Output_C%20(4).png)
+    ![image](https://github.com/Fanxuan08/11401_CS203A/blob/main/Assignment/AssignmentIV/OutputPicture/Output_C%20(4).png)
 
-  ![image](https://github.com/Fanxuan08/11401_CS203A/blob/main/Assignment/AssignmentIV/OutputPicture/Output_C%20(5).png)
+    ![image](https://github.com/Fanxuan08/11401_CS203A/blob/main/Assignment/AssignmentIV/OutputPicture/Output_C%20(5).png)
 
-=== Hash Function Observation (C++ version) ===
+  === Hash Function Observation (C++ version) ===
 
-  ![image](https://github.com/Fanxuan08/11401_CS203A/blob/main/Assignment/AssignmentIV/OutputPicture/Output_cpp%20(4).png)
+    ![image](https://github.com/Fanxuan08/11401_CS203A/blob/main/Assignment/AssignmentIV/OutputPicture/Output_cpp%20(4).png)
 
-  ![image](https://github.com/Fanxuan08/11401_CS203A/blob/main/Assignment/AssignmentIV/OutputPicture/Output_cpp%20(5).png) 
+    ![image](https://github.com/Fanxuan08/11401_CS203A/blob/main/Assignment/AssignmentIV/OutputPicture/Output_cpp%20(5).png) 
 
 - Observations: 
   1. The outputs confirm that prime table sizes (e.g., 11, 37) provide a more even key distribution and fewer collisions.
