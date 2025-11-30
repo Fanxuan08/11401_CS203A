@@ -112,7 +112,7 @@ Email: minna1008.su@gmail.com
 ### Clean Build Files
 - Remove all compiled files:
   ```bash
-  make clean
+  .\makefile.bat clean
   ```
 
 ### Execution
@@ -137,6 +137,7 @@ Email: minna1008.su@gmail.com
   ![image](https://github.com/Fanxuan08/11401_CS203A/blob/main/Assignment/AssignmentIV/OutputPicture/Output_cpp%20(3).png)
 
 - Example output for strings:
+
 === Hash Function Observation (C version) ===
 
   ![image](https://github.com/Fanxuan08/11401_CS203A/blob/main/Assignment/AssignmentIV/OutputPicture/Output_C%20(4).png)
@@ -144,6 +145,7 @@ Email: minna1008.su@gmail.com
   ![image](https://github.com/Fanxuan08/11401_CS203A/blob/main/Assignment/AssignmentIV/OutputPicture/Output_C%20(5).png)
 
 === Hash Function Observation (C++ version) ===
+
   ![image](https://github.com/Fanxuan08/11401_CS203A/blob/main/Assignment/AssignmentIV/OutputPicture/Output_cpp%20(4).png)
 
   ![image](https://github.com/Fanxuan08/11401_CS203A/blob/main/Assignment/AssignmentIV/OutputPicture/Output_cpp%20(5).png) 
