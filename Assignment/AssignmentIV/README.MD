@@ -11,12 +11,14 @@ Email: minna1008.su@gmail.com
 ### Integer Keys 
 - Formula / pseudocode:
   - [My C language coding implementation here]
+
     int myHashInt(int key, int m) {
       if (m <= 0) return -1; // invalid table size
       return key % m;  // division method example
     }
 
   - [My C++ language coding implementation here]
+
     int myHashInt(int key, int m) {
       if (m <= 0) return -1;// Simple integer hash (mod table size)
       return key % m;  // basic division method
@@ -34,6 +36,7 @@ Email: minna1008.su@gmail.com
 ### Non-integer Keys
 - Formula / pseudocode:
   - [My C language coding implementation here]
+
     int myHashString(const char* str, int m) {
       unsigned long hash = 0;
       if (m <= 0) return -1; // invalid table size
@@ -46,6 +49,7 @@ Email: minna1008.su@gmail.com
     }
   
   - [My C++ language coding implementation here]
+
     int myHashString(const std::string& str, int m) {
       unsigned long hash = 0;
       if (m <= 0) return -1; //Return -1 if table size m is invalid (<=0)
