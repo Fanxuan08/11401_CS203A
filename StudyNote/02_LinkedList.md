@@ -1,5 +1,4 @@
 # Linked List (鏈結串列)
-<img src="https://github.com/Fanxuan08/11401_CS203A/blob/main/StudyNote/參考圖片/LinkedList.jpg" alt="LinkedList" width="400">
 
 ## 核心概念
 - Linked List 的出現是為了 **「解決陣列的限制」**。  
@@ -57,13 +56,13 @@
 
 ### Linked List 的進階變體
 - **Singly (單向)**：只能向後遍歷。
-<img src="https://github.com/Fanxuan08/11401_CS203A/blob/main/StudyNote/參考圖片/LinkedList.jpg" alt="LinkedList" width="400">
+<img src="https://github.com/Fanxuan08/11401_CS203A/blob/main/StudyNote/參考圖片/LinkedList.jpg" alt="LinkedList" width="500">
 
 - **Doubly (雙向)**：增加 `prev` 指標，可向前遍歷，刪除節點時不必尋找 Prev，但記憶體消耗更大。
 <img src="https://github.com/Fanxuan08/11401_CS203A/blob/main/StudyNote/參考圖片/DoublyLinkedList.jpg" alt="DoublyLinkedList" width="400">
 
 - **Circular (環狀)**：尾節點指向頭節點，適合輪流機制（如遊戲回合、OS 排程）。
-<img src="https://github.com/Fanxuan08/11401_CS203A/blob/main/StudyNote/參考圖片/CircularLinkedList.jpg" alt="CircularLinkedList" width="400">
+<img src="https://github.com/Fanxuan08/11401_CS203A/blob/main/StudyNote/參考圖片/CircularLinkedList.jpg" alt="CircularLinkedList" width="500">
 
 ### Selection Sort (交換值 vs 交換指標)
 - **交換值 (Swap Value)**：直接修改節點資料，簡單但資料量大時效率低。  
