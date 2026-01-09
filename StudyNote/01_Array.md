@@ -24,9 +24,9 @@ Array 是最基礎的資料結構，就是 **「一塊連續的記憶體空間�
 | 擴充性 | 無法改變 | 可用 `realloc` 調整，但有代價 |
 
 ### 多維陣列的想像
-- 1D Array：想像成「一列表格」。  ![](StudyNote/參考圖片/1D_array.jpg)
-- 2D Array：想像成「表格」(Row, Column)。  ![](StudyNote/參考圖片/2D_array.jpg)
-- 3D Array：想像成「好幾層表格」(Plane, Row, Column)。 ![](StudyNote/參考圖片/3D_array.jpg)
+- 1D Array：想像成「一列表格」。  ![1D_array](StudyNote/參考圖片/1D_array.jpg)
+- 2D Array：想像成「表格」(Row, Column)。  ![2D_array](StudyNote/參考圖片/2D_array.jpg)
+- 3D Array：想像成「好幾層表格」(Plane, Row, Column)。 ![3D_array](StudyNote/參考圖片/3D_array.jpg)
 
 ## 運作方式與操作邏輯
 
@@ -40,15 +40,15 @@ Array 是最基礎的資料結構，就是 **「一塊連續的記憶體空間�
 課堂上教了三種基礎排序，**要會畫圖、過程**。
 
 - **Bubble Sort (泡沫排序)**：
-![](StudyNote/參考圖片/BubbleSort.jpg)
+![BubbleSort](StudyNote/參考圖片/BubbleSort.jpg)
   邏輯：兩兩相比，若前一個數字比後一個大就交換位置。
 
 - **Selection Sort (選擇排序)**：  
-![](StudyNote/參考圖片/SelectionSort.jpg)
+![SelectionSort](StudyNote/參考圖片/SelectionSort.jpg)
   邏輯：每一輪找出最小值並將它跟未排序區的第一個數字交換位置。
 
 - **Insertion Sort (插入排序)**：  
-![](StudyNote/參考圖片/InsertionSort.jpg)
+![InsertionSort](StudyNote/參考圖片/InsertionSort.jpg)
   邏輯：像打撲克牌理牌。拿到一張新牌 (Key)，在左邊已排好的區域中，從後往前掃，找到對的位置插進去。
 
 ### 搜尋演算法 (Searching)
@@ -75,13 +75,13 @@ Array 是最基礎的資料結構，就是 **「一塊連續的記憶體空間�
 
 ### 動態記憶體分配
 - **malloc（記憶體分配）**：我想要一塊新的空間存東西，就用 malloc，分配好後它會給我一個指標指向這塊空間。  
-- malloc 的特性：
+- **malloc 的特性**：
   1. 內容未初始化：剛分配的空間裡面可能都是亂數，不要直接用。  
   2. 大小固定：如果之後想存更多或更少的東西，要用 realloc 或自己重新分配。  
   3. 記憶體釋放：用完一定要 `free()`，否則會記憶體洩漏。
 
 - **realloc（動態記憶體調整）**：已經有一塊空間，但想變大或變小，用 realloc 動態調整它的大小。  
-- realloc 的特性：
+- **realloc 的特性**：
   1. 會保留原本資料：原本存的東西不會被清掉，但新增部分可能是垃圾值。  
   2. 可能搬家：如果原本空間不夠，它會在 Heap 上找新地方，然後把資料搬過去。  
   3. 回傳新指標：如果搬家了，原指標就不能再用，必須更新指標。  
@@ -96,6 +96,6 @@ Array 是最基礎的資料結構，就是 **「一塊連續的記憶體空間�
 C 語言字串是 Character Array，但最後一定要有一個隱形的 `\0` (Null character) 結尾。  
 範例：如果要存 `"Hello"` (5個字)，Array 至少要開 size 6，不然會爆掉。
 
-### Reference
+## Reference
 - 黃鈺峰教授，《CS203A 資料結構》課程簡報，作為本筆記 Array 相關內容之主要參考來源。  
 - 部分內容與語句排版參考 AI Copilot 的建議，經整理與修正以符合教學筆記風格。
