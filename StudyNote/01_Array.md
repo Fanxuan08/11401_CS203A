@@ -24,9 +24,9 @@ Array 是最基礎的資料結構，就是 **「一塊連續的記憶體空間�
 | 擴充性 | 無法改變 | 可用 `realloc` 調整，但有代價 |
 
 ### 多維陣列的想像
-- 1D Array：想像成「一列表格」。  ![image](https://github.com/Fanxuan08/11401_CS203A/blob/main/StudyNote/%E5%8F%83%E8%80%83%E5%9C%96%E7%89%87/1D_array.jpg)
-- 2D Array：想像成「表格」(Row, Column)。  ![image](https://github.com/Fanxuan08/11401_CS203A/blob/main/StudyNote/%E5%8F%83%E8%80%83%E5%9C%96%E7%89%87/2D_array.jpg)
-- 3D Array：想像成「好幾層表格」(Plane, Row, Column)。 ![3D_array](https://github.com/Fanxuan08/11401_CS203A/blob/main/StudyNote/%E5%8F%83%E8%80%83%E5%9C%96%E7%89%87/3D_array.jpg)
+- 1D Array：想像成「一列表格」。  <img src="https://github.com/Fanxuan08/11401_CS203A/blob/main/StudyNote/參考圖片/1D_array.jpg" alt="1D Array" width="150">
+- 2D Array：想像成「表格」(Row, Column)。  <img src="https://github.com/Fanxuan08/11401_CS203A/blob/main/StudyNote/參考圖片/2D_array.jpg" alt="2D Array" width="150">
+- 3D Array：想像成「好幾層表格」(Plane, Row, Column)。 <img src="https://github.com/Fanxuan08/11401_CS203A/blob/main/StudyNote/參考圖片/3D_array.jpg" alt="3D Array" width="150">
 
 ## 運作方式與操作邏輯
 
