@@ -3,7 +3,7 @@
 ## 核心概念
 - 是另一種受限的線性資料結構，但它的規則與 Stack 相反，遵循 **FIFO (First-In, First-Out，先進先出)** 原則。
 - 就像在櫃檯「排隊」，先排的人先買到票離開，後來的人只能排在隊伍最後面。
-<img src="https://github.com/Fanxuan08/11401_CS203A/blob/main/StudyNote/參考圖片/Queue.jpg" alt="Queue" width="600">
+<img src="https://github.com/Fanxuan08/11401_CS203A/blob/main/StudyNote/參考圖片/Queue.jpg" alt="Queue" width="400">
 
 ## Queue 能解決什麼問題？
 - **排隊與排程**：處理需要「公平競爭」或「依序處理」的場景。
