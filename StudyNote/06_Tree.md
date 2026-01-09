@@ -72,9 +72,9 @@
 ## 複雜度與實作
 | 結構/狀態 | Search / Insert / Delete | 實作 |
 |---|---|---|
-| Average BST | O(\log n) | 每次切一半，跟 Binary Search 一樣快。 |
+| Average BST | O(log n) | 每次切一半，跟 Binary Search 一樣快。 |
 | Skewed BST (最差) | O(n) | 資料剛好已排序，樹退化成 Linked List。 |
-| Balanced BST (AVL/Red-Black) | O(\log n) | 透過旋轉 (Rotation) 保持平衡，最差也是 O(\log n)。 |
+| Balanced BST (AVL/Red-Black) | O(log n) | 透過旋轉 (Rotation) 保持平衡，最差也是 O(\log n)。 |
 
 **實作建議**：  
 - 如果你要頻繁搜尋資料，BST 很棒。  

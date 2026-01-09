@@ -32,7 +32,7 @@
 
 ### Hash Function 設計 (怎麼算 Index？)
 - **Division Method (除法)**：h(k) = k mod m  
-  重點：m (Table size) 最好選 **質數 (Prime)**，可以減少因為輸入資料規律而造成的衝突。
+- 重點：m (Table size) 最好選 **質數 (Prime)**，可以減少因為輸入資料規律而造成的衝突。
 
 ### Collision Resolution 碰撞解方
 #### 解法一：Separate Chaining (鏈結法)

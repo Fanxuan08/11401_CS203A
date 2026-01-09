@@ -12,7 +12,7 @@
 ## Heap 能解決什麼問題？
 - **優先權佇列 (Priority Queue)**：Heap 最重要的應用。  
   就像急診室檢傷分類，不是先到先看診，而是「最嚴重的先看」。  
-  Heap 讓我們可以 O(1) 拿到最大/最小值，O(\log n) 處理新進資料。
+  Heap 讓我們可以 O(1) 拿到最大/最小值，O(log n) 處理新進資料。
 
 **應用**：  
 - 作業系統排程：最短作業優先 (SJF)，用 Min-Heap 挑選剩餘時間最短的工作執行。
@@ -30,7 +30,7 @@
 - 假設 Root 放在 Index 0 的位置：  
     - 左小孩 (Left Child)：2i + 1  
     - 右小孩 (Right Child)：2i + 2  
-    - 父節點 (Parent)：\(\lfloor (i-1) / 2 \rfloor\)  
+    - 父節點 (Parent)：floor (i-1) / 2floor 
 
 ### Max Heap vs. Min Heap
 - **Max Heap**：Root 是老大 (Max)，適合找最大值或處理最緊急事件。
@@ -55,15 +55,15 @@
 | 操作 | 時間複雜度 | 直覺 |
 |---|---|---|
 | Peek (看最大/小值) | O(1) | 就在 Root (Index 0)，直接拿 |
-| Insert (插入) | O(\log n) | 最差情況從 Leaf 浮到 Root，路徑長等於樹高 |
-| Extract (取出) | O(\log n) | 最差情況從 Root 沉到 Leaf，路徑長等於樹高 |
+| Insert (插入) | O(log n) | 最差情況從 Leaf 浮到 Root，路徑長等於樹高 |
+| Extract (取出) | O(log n) | 最差情況從 Root 沉到 Leaf，路徑長等於樹高 |
 | Build Heap | O(n) | 使用 Floyd's algorithm (Bottom-up)，反直覺但重要 |
-| Heap Sort | O(n \log n) | 做 n 次 Extract Max |
+| Heap Sort | O(n log n) | 做 n 次 Extract Max |
 
 ## 容易搞混的地方與記憶重點
 
 ### Heap vs. Binary Search Tree (BST)
-- **BST**：左小右大，用於搜尋 (O(\log n))，In-order 走訪會排序。
+- **BST**：左小右大，用於搜尋 (O(log n))，In-order 走訪會排序。
 - **Heap**：父大子小 (Max Heap)，用於找極值 (O(1))，兄弟無序，In-order 走訪是亂的。
 - 重點：Heap 為「優先權」而生，不是搜尋任意值；找特定數字仍需 O(n)。
 
