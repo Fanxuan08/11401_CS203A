@@ -29,7 +29,7 @@ Array 是最基礎的資料結構，就是 **「一塊連續的記憶體空間�
 - 2D Array：想像成「表格」(Row, Column)。
 <img src="https://github.com/Fanxuan08/11401_CS203A/blob/main/StudyNote/參考圖片/2D_array.jpg" alt="2D Array" width="150">
 - 3D Array：想像成「好幾層表格」(Plane, Row, Column)。
-<img src="https://github.com/Fanxuan08/11401_CS203A/blob/main/StudyNote/參考圖片/3D_array.jpg" alt="3D Array" width="150">
+<img src="https://github.com/Fanxuan08/11401_CS203A/blob/main/StudyNote/參考圖片/3D_array.jpg" alt="3D Array" width="200">
 
 ## 運作方式與操作邏輯
 
@@ -43,15 +43,15 @@ Array 是最基礎的資料結構，就是 **「一塊連續的記憶體空間�
 課堂上教了三種基礎排序，**要會畫圖、過程**。
 
 - **Bubble Sort (泡沫排序)**：
-<img src="https://github.com/Fanxuan08/11401_CS203A/raw/main/StudyNote/參考圖片/BubbleSort.jpg" alt="BubbleSort" width="200">
+<img src="https://github.com/Fanxuan08/11401_CS203A/raw/main/StudyNote/參考圖片/BubbleSort.jpg" alt="BubbleSort" width="400">
   邏輯：兩兩相比，若前一個數字比後一個大就交換位置。
 
 - **Selection Sort (選擇排序)**：  
-<img src="https://github.com/Fanxuan08/11401_CS203A/raw/main/StudyNote/參考圖片/SelectionSort.jpg" alt="SelectionSort" width="200">
+<img src="https://github.com/Fanxuan08/11401_CS203A/raw/main/StudyNote/參考圖片/SelectionSort.jpg" alt="SelectionSort" width="400">
   邏輯：每一輪找出最小值並將它跟未排序區的第一個數字交換位置。
 
 - **Insertion Sort (插入排序)**：  
-<img src="https://github.com/Fanxuan08/11401_CS203A/raw/main/StudyNote/參考圖片/InsertionSort.jpg" alt="InsertionSort" 
+<img src="https://github.com/Fanxuan08/11401_CS203A/raw/main/StudyNote/參考圖片/InsertionSort.jpg" alt="InsertionSort" width="400">
   邏輯：像打撲克牌理牌。拿到一張新牌 (Key)，在左邊已排好的區域中，從後往前掃，找到對的位置插進去。
 
 ### 搜尋演算法 (Searching)
