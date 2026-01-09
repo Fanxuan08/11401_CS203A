@@ -45,16 +45,17 @@
 ### 陣列實作：Top 的初始值
 - Top 可定義為 -1 或 0。  
 - 記憶規則：
+
   **Top = -1**：堆疊空，Push 時先加再放。  
   **Top = 0**：堆疊空，Top 指向下一個可用位置，Push 時先放再加。  
 - 實作或考試前需確認 Top 定義。
 
 ### Array vs Linked List 實作
-**Array**  
+#### **Array**  
 - 優點：速度快、記憶體連續  
 - 缺點：固定大小，可能發生 Stack Overflow，擴充需搬移資料  
 
-**Linked List**  
+#### **Linked List**  
 - 優點：可動態增長，無 Overflow 問題  
 - 缺點：每個節點需存額外指標，記憶體開銷較大  
 
