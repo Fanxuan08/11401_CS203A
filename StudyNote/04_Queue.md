@@ -71,6 +71,6 @@
 - **關鍵**：需要兩個指標 `front` 和 `rear` 分別指向 Head 和 Tail。
 
 ## Reference
-* 黃鈺峰教授，《CS203A 資料結構》課程簡報。
-* 部分語句參考 AI Copilot 建議，並進行排版與語意修正。
-* 圖片來源：Stack 與 Queue 示意圖 — 來源於 [Better Programming (Medium)](https://medium.com/better-programming/stack-vs-queue-55d6ea7b2f4f?utm_source=chatgpt.com)
+- 黃鈺峰教授，《CS203A 資料結構》課程簡報，作為本筆記 Queue 相關內容之主要參考來源。  
+- 部分內容與語句排版參考 AI Copilot 的建議，經整理與修正以符合教學筆記風格。  
+- 圖片來源：[Better Programming (Medium)](https://medium.com/better-programming/stack-vs-queue-55d6ea7b2f4f?utm_source=chatgpt.com)
