@@ -14,9 +14,9 @@
 - **學號：** 1131523
 
 ## Final Project
-- [**Assignment**](https://github.com/Fanxuan08/11401_CS203A/tree/main/Assignment):本學期所有作業以及作業解答
-- [**Quiz**](https://github.com/Fanxuan08/11401_CS203A/tree/main/Quiz):本學期所有大考、小考之考卷以及解答
-- [**Study Note**](https://github.com/Fanxuan08/11401_CS203A/tree/main/StudyNote):本學期課程各單元重點整理及手寫筆記
+- [**Assignment**](https://github.com/Fanxuan08/11401_CS203A/tree/main/Assignment): 本學期所有作業以及作業解答
+- [**Quiz**](https://github.com/Fanxuan08/11401_CS203A/tree/main/Quiz): 本學期所有大考、小考之考卷以及解答
+- [**Study Note**](https://github.com/Fanxuan08/11401_CS203A/tree/main/StudyNote): 本學期課程各單元重點整理及手寫筆記
 
 ## Repository Description
 This repository stores all lecture notes, homework, and C/C++ implementations for the 11401_CS203A Data Structures course at Yuan Ze University.
