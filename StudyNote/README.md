@@ -15,7 +15,7 @@
 
 ## Comparison
 
-| 單元（含 md 連結） | 中文簡介 |
+| 單元 | 中文簡介 |
 | :--- | :--- |
 | [Array vs. Linked List](https://github.com/Fanxuan08/11401_CS203A/blob/main/StudyNote/Comparison_Array%26LinkedList.md) | 比較連續記憶體與動態節點的存取效能與應用 |
 | [Stack vs. Queue](https://github.com/Fanxuan08/11401_CS203A/blob/main/StudyNote/Comparison_Stack%26Queue.md) | 比較 LIFO 與 FIFO 兩種存取原則的差異 |
