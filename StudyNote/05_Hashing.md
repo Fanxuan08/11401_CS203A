@@ -4,6 +4,7 @@
 - Hashing 是一種高效的資料存取方法。傳統的陣列查找需要遍歷整個陣列 (O(n))，或先排序再二分搜尋 (O(\log n))。  
 - Hashing 的目標是將搜尋、插入與刪除操作的平均時間複雜度降至 O(1)。  
 - 其原理是：透過 Hash Function 將資料的 Key 映射到陣列索引 (Index)，直接存取對應位置的資料。
+<img src="https://github.com/Fanxuan08/11401_CS203A/blob/main/StudyNote/參考圖片/HashTable.jpg" alt="HashTable" width="600">
 
 ## Hashing 能解決什麼問題？
 - **快速查找**：就像查字典，你不會從第一頁翻到最後一頁找單字，而是根據字母索引直接跳到那一區。

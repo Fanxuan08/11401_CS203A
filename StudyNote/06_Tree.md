@@ -24,11 +24,13 @@
 - **Degree (分枝度)**：一個節點有幾個小孩 (Fan-out)。  
 - **Siblings (兄弟)**：同一個爸媽的小孩。  
 - **Path**：從 A 走到 B 的路徑。  
+<img src="https://github.com/Fanxuan08/11401_CS203A/blob/main/StudyNote/參考圖片/Tree1.jpg" alt="Tree1" width="800">
 
 ### Height vs. Depth (超級容易搞混)
 - **Depth (深度)**：從 Root 往下數。Root 的 depth 是 0 (或 1，看定義，通常是 0)。  
 - **Height (高度)**：從 Leaf 往上數。該節點到最遠 Leaf 的距離。Leaf 的 height 是 0。  
-- **Tree Height** = Root 的 Height = 整棵樹最深有多深。  
+- **Tree Height** = Root 的 Height = 整棵樹最深有多深。 
+<img src="https://github.com/Fanxuan08/11401_CS203A/blob/main/StudyNote/參考圖片/Tree2.jpg" alt="Tree2" width="800"> 
 
 ### Binary Tree (二元樹) 的種類
 - 二元樹是考試重點，每個節點最多 2 個小孩：  
@@ -68,6 +70,7 @@
   - 第一個孩子變成 Binary Tree 的左子節點。
   - 下一個兄弟變成 Binary Tree 的右子節點。
 - 這樣可以把任意形狀的樹都統一變成二元樹來處理。
+<img src="https://github.com/Fanxuan08/11401_CS203A/blob/main/StudyNote/參考圖片/Tree3.jpg" alt="Tree3" width="800"> 
 
 ## 複雜度與實作
 | 結構/狀態 | Search / Insert / Delete | 實作 |
