@@ -13,6 +13,11 @@
 - **名字：** [蘇芃瑄 Peng-Syuan Su](mailto:s1131523@mail.yzu.edu.tw)
 - **學號：** 1131523
 
+## Final Project
+- [**Assignment**:本學期所有作業以及作業解答](https://github.com/Fanxuan08/11401_CS203A/tree/main/Assignment)
+- [**Quiz**:本學期所有大考、小考之考卷以及解答](https://github.com/Fanxuan08/11401_CS203A/tree/main/Quiz)
+- [**Study Note**:本學期課程各單元重點整理及手寫筆記](https://github.com/Fanxuan08/11401_CS203A/tree/main/StudyNote)
+
 ## Repository Description
 This repository stores all lecture notes, homework, and C/C++ implementations for the 11401_CS203A Data Structures course at Yuan Ze University.
 
